@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radar de Reação</title>
+  <meta name="description" content="Termômetro semanal de como o mercado e o público online reagem a decisões econômicas do governo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="limite">
+      <h1>Radar de Reação</h1>
+      <p class="sub">Como o <strong>mercado</strong> (notícias de economia) e o <strong>público online</strong> (comentários no YouTube) reagem a decisões do governo com impacto econômico. O Radar mostra só a reação: não opina sobre as decisões.</p>
+      <p class="atualizado" id="atualizado"></p>
+    </div>
+  </header>
+
+  <main class="limite">
+    <p class="atualizado-incorporado" id="atualizado-incorporado"></p>
+    <nav class="eventos" id="eventos" aria-label="Eventos"></nav>
+
+    <section class="cartao" id="cartao-evento" aria-live="polite">
+      <p class="rotulo-secao">Evento</p>
+      <h2 id="evento-titulo"></h2>
+      <p id="evento-detalhe" class="detalhe"></p>
+    </section>
+
+    <section class="cartao" id="aviso-classificacao" hidden>
+      <p><strong>Classificação em andamento.</strong> Por enquanto, o painel mostra só os preços. As barras de reação aparecem quando a classificação dos textos terminar.</p>
+    </section>
+
+    <section class="cartao" id="secao-semana">
+      <div class="linha-semana">
+        <label for="semana" class="rotulo-secao">Semana desde o anúncio</label>
+        <span id="semana-texto" class="semana-texto"></span>
+      </div>
+      <input type="range" id="semana" min="1" max="1" value="1" step="1">
+      <div class="publicos">
+        <article class="publico" id="bloco-mercado">
+          <h3>Mercado <span class="tipo">notícias de economia</span></h3>
+          <div class="barra" role="img" aria-label=""></div>
+          <p class="numeros"></p>
+        </article>
+        <article class="publico" id="bloco-publico">
+          <h3>Público <span class="tipo">reação online no YouTube</span></h3>
+          <div class="barra" role="img" aria-label=""></div>
+          <p class="numeros"></p>
+        </article>
+      </div>
+      <ul class="legenda">
+        <li><span class="cor pos"></span>Favorável à decisão</li>
+        <li><span class="cor neu"></span>Neutro</li>
+        <li><span class="cor neg"></span>Contrário à decisão</li>
+      </ul>
+    </section>
+
+    <section class="cartao">
+      <p class="rotulo-secao">Saldo semana a semana</p>
+      <p class="detalhe">Saldo = % favorável − % contrário. Semanas com menos de 30 textos aparecem como ponto vazado (amostra baixa).</p>
+      <div class="grafico"><canvas id="grafico-saldo" aria-label="Saldo por semana"></canvas></div>
+    </section>
+
+    <section class="cartao">
+      <p class="rotulo-secao">Termômetro de preços</p>
+      <p class="detalhe" id="precos-detalhe">Variação acumulada desde a véspera do anúncio. Os preços não entram no cálculo da reação.</p>
+      <div class="termometro" id="termometro"></div>
+      <div class="grafico"><canvas id="grafico-precos" aria-label="Variação dos preços desde a véspera"></canvas></div>
+    </section>
+
+    <section class="cartao" id="qualidade">
+      <p class="rotulo-secao">Qualidade do modelo</p>
+      <p id="qualidade-metodo"></p>
+      <p id="qualidade-comparacao" class="detalhe"></p>
+      <h3>Nota em textos novos (validação)</h3>
+      <table class="tabela" id="tabela-validacao">
+        <thead><tr><th>Recorte</th><th>Textos</th><th>Macro-F1</th><th>Intervalo de 95%</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="detalhe" id="nota-validacao"></p>
+      <h3>Concordância entre rotulagens</h3>
+      <table class="tabela" id="tabela-concordancia">
+        <thead><tr><th>Base</th><th>κ (kappa)</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="detalhe" id="nota-concordancia"></p>
+      <h3>Fora do tema</h3>
+      <p id="filtro-fora"></p>
+      <h3>Limitações</h3>
+      <ul id="limitacoes"></ul>
+    </section>
+  </main>
+
+  <footer class="limite rodape">
+    <p>Radar de Reação · projeto da liga de mercado financeiro. Textos coletados sem autor; nomes de políticos e partidos são trocados por marcadores antes da classificação. Reação online ≠ opinião da população.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,445 @@
+{
+ "atualizado_em": "2026-11-12T16:32:55+00:00",
+ "minimo_semana": 30,
+ "teto_video": null,
+ "classificacao_pronta": false,
+ "eventos": [
+  {
+   "id": "bets-2026",
+   "titulo": "Governo publica MP que proíbe as bets no Brasil",
+   "data": "2026-09-25",
+   "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/entenda-medida-provisoria-e-projeto-que-proibem-bets-no-brasil",
+   "semanas": [],
+   "encerrado_na_semana": null,
+   "precos": {
+    "vespera": "2026-09-24",
+    "dolar_base": 5.1795,
+    "ibovespa_base": 183966.0,
+    "serie": [
+     {
+      "data": "2026-09-25",
+      "dolar": 0.38,
+      "ibovespa": -0.27
+     },
+     {
+      "data": "2026-09-28",
+      "dolar": 0.65,
+      "ibovespa": -0.53
+     },
+     {
+      "data": "2026-09-29",
+      "dolar": 0.79,
+      "ibovespa": -0.08
+     },
+     {
+      "data": "2026-09-30",
+      "dolar": 0.03,
+      "ibovespa": 1.29
+     },
+     {
+      "data": "2026-10-01",
+      "dolar": 0.55,
+      "ibovespa": 1.76
+     },
+     {
+      "data": "2026-10-02",
+      "dolar": 0.86,
+      "ibovespa": 4.43
+     },
+     {
+      "data": "2026-10-05",
+      "dolar": -3.74,
+      "ibovespa": 12.47
+     },
+     {
+      "data": "2026-10-06",
+      "dolar": -4.05,
+      "ibovespa": 11.89
+     },
+     {
+      "data": "2026-10-07",
+      "dolar": -3.59,
+      "ibovespa": 11.05
+     },
+     {
+      "data": "2026-10-08",
+      "dolar": -3.24,
+      "ibovespa": 12.1
+     },
+     {
+      "data": "2026-10-09",
+      "dolar": -3.67,
+      "ibovespa": 13.64
+     },
+     {
+      "data": "2026-10-13",
+      "dolar": -3.28,
+      "ibovespa": 12.46
+     },
+     {
+      "data": "2026-10-14",
+      "dolar": -2.61,
+      "ibovespa": 12.25
+     },
+     {
+      "data": "2026-10-15",
+      "dolar": -2.46,
+      "ibovespa": 11.07
+     },
+     {
+      "data": "2026-10-16",
+      "dolar": -1.87,
+      "ibovespa": 11.67
+     },
+     {
+      "data": "2026-10-19",
+      "dolar": -2.38,
+      "ibovespa": 11.48
+     },
+     {
+      "data": "2026-10-20",
+      "dolar": -3.2,
+      "ibovespa": 13.23
+     },
+     {
+      "data": "2026-10-21",
+      "dolar": -2.93,
+      "ibovespa": 12.25
+     },
+     {
+      "data": "2026-10-22",
+      "dolar": -2.73,
+      "ibovespa": 10.96
+     },
+     {
+      "data": "2026-10-23",
+      "dolar": -2.74,
+      "ibovespa": 11.48
+     },
+     {
+      "data": "2026-10-26",
+      "dolar": 6.2,
+      "ibovespa": -4.0
+     },
+     {
+      "data": "2026-10-27",
+      "dolar": 2.99,
+      "ibovespa": -4.49
+     },
+     {
+      "data": "2026-10-28",
+      "dolar": 3.14,
+      "ibovespa": -7.04
+     },
+     {
+      "data": "2026-10-29",
+      "dolar": 3.76,
+      "ibovespa": -8.03
+     },
+     {
+      "data": "2026-10-30",
+      "dolar": 4.67,
+      "ibovespa": -8.72
+     },
+     {
+      "data": "2026-11-03",
+      "dolar": 6.06,
+      "ibovespa": -10.02
+     },
+     {
+      "data": "2026-11-04",
+      "dolar": 5.76,
+      "ibovespa": -8.92
+     },
+     {
+      "data": "2026-11-05",
+      "dolar": 5.46,
+      "ibovespa": -9.66
+     },
+     {
+      "data": "2026-11-06",
+      "dolar": 6.21,
+      "ibovespa": -8.41
+     },
+     {
+      "data": "2026-11-09",
+      "dolar": 6.47,
+      "ibovespa": -6.38
+     },
+     {
+      "data": "2026-11-10",
+      "dolar": 7.81,
+      "ibovespa": -6.86
+     },
+     {
+      "data": "2026-11-11",
+      "dolar": 7.36,
+      "ibovespa": -6.47
+     },
+     {
+      "data": "2026-11-12",
+      "dolar": 8.39,
+      "ibovespa": -6.78
+     }
+    ]
+   }
+  },
+  {
+   "id": "bolsa-familia-2026",
+   "titulo": "Decreto reajusta o Bolsa Família em 15%",
+   "data": "2026-09-17",
+   "fonte_url": "https://meutudo.com.br/blog/noticias/2026/09/18/aumento-do-bolsa-familia-2026-chega-a-r-164-por-integrante-quanto-cada-familia-recebera",
+   "semanas": [],
+   "encerrado_na_semana": null,
+   "precos": {
+    "vespera": "2026-09-16",
+    "dolar_base": 5.1527,
+    "ibovespa_base": 185548.0,
+    "serie": [
+     {
+      "data": "2026-09-17",
+      "dolar": -0.01,
+      "ibovespa": 0.24
+     },
+     {
+      "data": "2026-09-18",
+      "dolar": 0.09,
+      "ibovespa": -0.17
+     },
+     {
+      "data": "2026-09-21",
+      "dolar": -0.8,
+      "ibovespa": 0.56
+     },
+     {
+      "data": "2026-09-22",
+      "dolar": -0.71,
+      "ibovespa": 1.01
+     },
+     {
+      "data": "2026-09-23",
+      "dolar": -0.22,
+      "ibovespa": 0.14
+     },
+     {
+      "data": "2026-09-24",
+      "dolar": 0.52,
+      "ibovespa": -0.85
+     },
+     {
+      "data": "2026-09-25",
+      "dolar": 0.9,
+      "ibovespa": -1.12
+     },
+     {
+      "data": "2026-09-28",
+      "dolar": 1.17,
+      "ibovespa": -1.38
+     },
+     {
+      "data": "2026-09-29",
+      "dolar": 1.31,
+      "ibovespa": -0.93
+     },
+     {
+      "data": "2026-09-30",
+      "dolar": 0.55,
+      "ibovespa": 0.43
+     },
+     {
+      "data": "2026-10-01",
+      "dolar": 1.07,
+      "ibovespa": 0.89
+     },
+     {
+      "data": "2026-10-02",
+      "dolar": 1.38,
+      "ibovespa": 3.54
+     },
+     {
+      "data": "2026-10-05",
+      "dolar": -3.24,
+      "ibovespa": 11.51
+     },
+     {
+      "data": "2026-10-06",
+      "dolar": -3.55,
+      "ibovespa": 10.93
+     },
+     {
+      "data": "2026-10-07",
+      "dolar": -3.09,
+      "ibovespa": 10.11
+     },
+     {
+      "data": "2026-10-08",
+      "dolar": -2.73,
+      "ibovespa": 11.14
+     },
+     {
+      "data": "2026-10-09",
+      "dolar": -3.17,
+      "ibovespa": 12.68
+     },
+     {
+      "data": "2026-10-13",
+      "dolar": -2.78,
+      "ibovespa": 11.5
+     },
+     {
+      "data": "2026-10-14",
+      "dolar": -2.11,
+      "ibovespa": 11.3
+     },
+     {
+      "data": "2026-10-15",
+      "dolar": -1.95,
+      "ibovespa": 10.12
+     },
+     {
+      "data": "2026-10-16",
+      "dolar": -1.36,
+      "ibovespa": 10.72
+     },
+     {
+      "data": "2026-10-19",
+      "dolar": -1.87,
+      "ibovespa": 10.53
+     },
+     {
+      "data": "2026-10-20",
+      "dolar": -2.69,
+      "ibovespa": 12.26
+     },
+     {
+      "data": "2026-10-21",
+      "dolar": -2.43,
+      "ibovespa": 11.29
+     },
+     {
+      "data": "2026-10-22",
+      "dolar": -2.22,
+      "ibovespa": 10.01
+     },
+     {
+      "data": "2026-10-23",
+      "dolar": -2.23,
+      "ibovespa": 10.53
+     },
+     {
+      "data": "2026-10-26",
+      "dolar": 6.75,
+      "ibovespa": -4.82
+     },
+     {
+      "data": "2026-10-27",
+      "dolar": 3.53,
+      "ibovespa": -5.3
+     },
+     {
+      "data": "2026-10-28",
+      "dolar": 3.67,
+      "ibovespa": -7.84
+     },
+     {
+      "data": "2026-10-29",
+      "dolar": 4.3,
+      "ibovespa": -8.82
+     },
+     {
+      "data": "2026-10-30",
+      "dolar": 5.21,
+      "ibovespa": -9.5
+     },
+     {
+      "data": "2026-11-03",
+      "dolar": 6.61,
+      "ibovespa": -10.79
+     },
+     {
+      "data": "2026-11-04",
+      "dolar": 6.31,
+      "ibovespa": -9.69
+     },
+     {
+      "data": "2026-11-05",
+      "dolar": 6.0,
+      "ibovespa": -10.43
+     },
+     {
+      "data": "2026-11-06",
+      "dolar": 6.77,
+      "ibovespa": -9.19
+     },
+     {
+      "data": "2026-11-09",
+      "dolar": 7.02,
+      "ibovespa": -7.17
+     },
+     {
+      "data": "2026-11-10",
+      "dolar": 8.37,
+      "ibovespa": -7.66
+     },
+     {
+      "data": "2026-11-11",
+      "dolar": 7.92,
+      "ibovespa": -7.27
+     },
+     {
+      "data": "2026-11-12",
+      "dolar": 8.96,
+      "ibovespa": -7.57
+     }
+    ]
+   }
+  }
+ ],
+ "qualidade": {
+  "provisorio": true,
+  "atualizado_em": "2026-11-12",
+  "metodo": "LLM aberto Qwen2.5-7B-Instruct (comprimido em 4 bits), com o guia de rotulagem como instrução: prompt v2 nos comentários e v1 nas notícias.",
+  "comparacao": "Comparado com LeIA (léxico), BERT de redes sociais e FinBERT-PT-BR em 300 textos rotulados à mão (base) e testado em 100 textos novos, sorteados depois (validação).",
+  "validacao": [
+   {
+    "recorte": "Público",
+    "n": 15,
+    "macro_f1": 0.55,
+    "ic": "0,31 a 0,67"
+   },
+   {
+    "recorte": "Mercado",
+    "n": 48,
+    "macro_f1": 0.41,
+    "ic": "0,30 a 0,50"
+   },
+   {
+    "recorte": "Total",
+    "n": 63,
+    "macro_f1": 0.52,
+    "ic": "0,40 a 0,64"
+   }
+  ],
+  "nota_validacao": "Números do prompt v2 em 12/11/2026. Serão trocados pelos do método final (v2 nos comentários e v1 nas notícias) depois da rodada lado a lado.",
+  "concordancia": [
+   {
+    "base": "Público (150 comentários)",
+    "kappa": 0.45
+   },
+   {
+    "base": "Mercado (150 notícias)",
+    "kappa": 0.31
+   }
+  ],
+  "nota_concordancia": "Concordância às cegas entre o rotulador e uma segunda rotulagem independente. A medição com um segundo analista humano está pendente.",
+  "filtro_fora": "O modelo reconhece cerca de 1 em cada 3 comentários fora do tema (cobertura de 0,31 na validação). Quando marca um texto como fora do tema, acerta. Por isso, parte dos comentários contados no Público é, na verdade, fora do tema.",
+  "limitacoes": [
+   "Reação online não é a opinião da população: os números vêm de comentários do YouTube e de notícias de quatro portais (InfoMoney, Money Times, Seu Dinheiro e Exame).",
+   "No Público, o modelo lê até 400 comentários sorteados por semana, entre todos os coletados.",
+   "No Mercado, quase todas as notícias saem na primeira semana; semanas com menos de 30 textos aparecem esmaecidas.",
+   "A base do Mercado tem poucos textos positivos (18 de 150), então a nota da classe positiva é instável.",
+   "Na base do Público, 42 dos 75 comentários do Bolsa Família vieram de um único canal; as notas foram conferidas com e sem esse canal.",
+   "Nomes de políticos e partidos são trocados por marcadores antes da classificação, e o site publica só números agregados."
+  ]
+ }
+}

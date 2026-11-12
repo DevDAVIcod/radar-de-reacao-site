@@ -1,0 +1,95 @@
+:root {
+  --fundo: #f6f7f9;
+  --cartao: #ffffff;
+  --texto: #1d2330;
+  --suave: #5b6475;
+  --borda: #e2e5eb;
+  --pos: #2a9d8f;
+  --neu: #a3a9b4;
+  --neg: #e76f51;
+  --destaque: #264653;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fundo: #12161d;
+    --cartao: #1b212b;
+    --texto: #e8ebf0;
+    --suave: #a3abb9;
+    --borda: #2c3442;
+    --neu: #6b7280;
+    --destaque: #8ecae6;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font: 16px/1.5 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.limite { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.topo { background: var(--destaque); color: #fff; padding: 28px 0 22px; margin-bottom: 20px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .topo { color: #12161d; } }
+.topo h1 { margin: 0 0 6px; font-size: 1.9rem; }
+.sub { margin: 0 0 6px; max-width: 70ch; }
+.atualizado { margin: 0; font-size: .85rem; opacity: .85; }
+.eventos { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.eventos button {
+  border: 1px solid var(--borda); background: var(--cartao); color: var(--texto);
+  padding: 8px 14px; border-radius: 999px; cursor: pointer; font: inherit; font-size: .92rem;
+}
+.eventos button[aria-pressed="true"] { background: var(--destaque); color: var(--cartao); border-color: var(--destaque); }
+.cartao { background: var(--cartao); border: 1px solid var(--borda); border-radius: 12px; padding: 18px; margin-bottom: 16px; }
+.cartao h2 { margin: 2px 0 4px; font-size: 1.35rem; }
+.cartao h3 { font-size: 1rem; margin: 16px 0 6px; }
+.rotulo-secao { margin: 0; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--suave); font-weight: 600; }
+.detalhe { color: var(--suave); font-size: .9rem; margin: 4px 0 8px; }
+.linha-semana { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.semana-texto { font-weight: 600; }
+input[type="range"] { width: 100%; margin: 10px 0 14px; accent-color: var(--destaque); }
+.publicos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .publicos { grid-template-columns: 1fr; } }
+.publico h3 { margin: 0 0 8px; }
+.publico .tipo { display: block; font-weight: 400; font-size: .82rem; color: var(--suave); }
+.publico.baixa { opacity: .45; }
+.barra { display: flex; height: 30px; border-radius: 6px; overflow: hidden; background: var(--borda); }
+.barra span { display: block; height: 100%; }
+.barra .pos { background: var(--pos); }
+.barra .neu { background: var(--neu); }
+.barra .neg { background: var(--neg); }
+.numeros { margin: 8px 0 0; font-size: .9rem; }
+.numeros strong { font-size: 1.05rem; }
+.selo { display: inline-block; font-size: .75rem; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--suave); color: var(--suave); margin-left: 6px; }
+.legenda { list-style: none; padding: 0; margin: 12px 0 0; display: flex; gap: 16px; flex-wrap: wrap; font-size: .85rem; color: var(--suave); }
+.cor { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.cor.pos { background: var(--pos); } .cor.neu { background: var(--neu); } .cor.neg { background: var(--neg); }
+.grafico { position: relative; height: 260px; }
+.termometro { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.medidor { flex: 1 1 160px; border: 1px solid var(--borda); border-radius: 10px; padding: 10px 12px; }
+.medidor .nome { font-size: .82rem; color: var(--suave); }
+.medidor .valor { font-size: 1.4rem; font-weight: 700; }
+.tabela { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.tabela th, .tabela td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--borda); }
+.tabela th { color: var(--suave); font-weight: 600; }
+.rodape { color: var(--suave); font-size: .85rem; padding-top: 4px; padding-bottom: 28px; }
+.atualizado-incorporado { display: none; }
+
+/* Modo incorporado: dentro do site da Ceará Finance (iframe ou ?incorporado=1).
+   Some o cabeçalho próprio (a página da liga já tem título) e o visual segue o da liga:
+   fundo branco, texto quase preto, Inter, títulos em Arial Black, botões em pílula preta. */
+.incorporado {
+  --fundo: #ffffff;
+  --cartao: #ffffff;
+  --texto: #0a0a0a;
+  --suave: rgba(10, 10, 10, .65);
+  --borda: #e5e5e5;
+  --destaque: #161616;
+}
+.incorporado body { background: transparent; }
+.incorporado .topo { display: none; }
+.incorporado main.limite, .incorporado .rodape { max-width: none; padding: 0; }
+.incorporado .atualizado-incorporado { display: block; margin: 0 0 10px; font-size: .8rem; color: var(--suave); }
+.incorporado .cartao { border-radius: 8px; box-shadow: none; }
+.incorporado .cartao h2 { font-family: "Arial Black", Arial, sans-serif; font-weight: 600; }
+.incorporado .eventos button { font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+.incorporado .eventos button[aria-pressed="true"] { background: #0a0a0a; border-color: #0a0a0a; color: #fff; }
