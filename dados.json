@@ -1,7 +1,7 @@
 {
- "atualizado_em": "2026-11-12T16:32:55+00:00",
+ "atualizado_em": "2026-11-12T17:02:27+00:00",
  "minimo_semana": 30,
- "teto_video": null,
+ "teto_video": 0.1,
  "classificacao_pronta": false,
  "eventos": [
   {
@@ -179,7 +179,7 @@
      {
       "data": "2026-11-12",
       "dolar": 8.39,
-      "ibovespa": -6.78
+      "ibovespa": -6.83
      }
     ]
    }
@@ -389,7 +389,7 @@
      {
       "data": "2026-11-12",
       "dolar": 8.96,
-      "ibovespa": -7.57
+      "ibovespa": -7.63
      }
     ]
    }
@@ -431,11 +431,11 @@
     "kappa": 0.31
    }
   ],
-  "nota_concordancia": "Concordância às cegas entre o rotulador e uma segunda rotulagem independente. A medição com um segundo analista humano está pendente.",
+  "nota_concordancia": "Os 300 textos da base foram rotulados por uma pessoa da liga. A concordância (κ) foi medida contra uma segunda rotulagem às cegas, feita por um assistente de IA antes de ver os rótulos humanos, e não por um segundo analista humano. Nas divergências, valeu o rótulo humano, revisado pelas regras do guia.",
   "filtro_fora": "O modelo reconhece cerca de 1 em cada 3 comentários fora do tema (cobertura de 0,31 na validação). Quando marca um texto como fora do tema, acerta. Por isso, parte dos comentários contados no Público é, na verdade, fora do tema.",
   "limitacoes": [
    "Reação online não é a opinião da população: os números vêm de comentários do YouTube e de notícias de quatro portais (InfoMoney, Money Times, Seu Dinheiro e Exame).",
-   "No Público, o modelo lê até 400 comentários sorteados por semana, entre todos os coletados.",
+   "No Público, o modelo lê até 400 comentários sorteados por semana, entre todos os coletados, e nenhum vídeo pesa mais de 10% de uma semana (a margem de erro já considera esse ajuste).",
    "No Mercado, quase todas as notícias saem na primeira semana; semanas com menos de 30 textos aparecem esmaecidas.",
    "A base do Mercado tem poucos textos positivos (18 de 150), então a nota da classe positiva é instável.",
    "Na base do Público, 42 dos 75 comentários do Bolsa Família vieram de um único canal; as notas foram conferidas com e sem esse canal.",
