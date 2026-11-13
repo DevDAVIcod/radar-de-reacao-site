@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-13T14:46:08+00:00",
+ "atualizado_em": "2026-11-13T14:53:19+00:00",
  "minimo_semana": 30,
  "teto_video": 0.1,
  "classificacao_pronta": true,
@@ -402,7 +402,7 @@
      {
       "data": "2026-11-13",
       "dolar": null,
-      "ibovespa": -6.58
+      "ibovespa": -6.5
      }
     ]
    }
@@ -866,7 +866,7 @@
      {
       "data": "2026-11-13",
       "dolar": null,
-      "ibovespa": -7.37
+      "ibovespa": -7.3
      }
     ]
    }
@@ -913,7 +913,8 @@
   "limitacoes": [
    "Reação online não é a opinião da população: os números vêm de comentários do YouTube e de notícias de quatro portais (InfoMoney, Money Times, Seu Dinheiro e Exame).",
    "No Público, o modelo lê até 400 comentários sorteados por semana, entre todos os coletados, e nenhum vídeo pesa mais de 10% de uma semana (a margem de erro já considera esse ajuste).",
-   "No Mercado, quase todas as notícias saem na primeira semana; semanas com menos de 30 textos aparecem esmaecidas.",
+   "No Mercado, quase todas as notícias saem na primeira semana; semanas com menos de 30 textos aparecem esmaecidas e sem margem de erro.",
+   "No Mercado, o modelo marca como contrárias mais notícias do que a pessoa que rotulou: na base de 150 notícias, foram 59 contra 32, e a maior parte da diferença eram notícias que, para a pessoa, só informavam (neutras). Por isso, o saldo do Mercado tende a sair mais negativo do que sairia com rotulagem humana.",
    "A base do Mercado tem poucos textos positivos (18 de 150), então a nota da classe positiva é instável.",
    "Na base do Público, 42 dos 75 comentários do Bolsa Família vieram de um único canal; as notas foram conferidas com e sem esse canal.",
    "Nomes de políticos e partidos são trocados por marcadores antes da classificação, e o site publica só números agregados."

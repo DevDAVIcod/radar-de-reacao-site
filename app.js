@@ -110,7 +110,9 @@ function preencherPublico(bloco, r, nome) {
   barra.setAttribute('aria-label',
     `${nome}: ${r.pos}% favorável, ${r.neu}% neutro, ${r.neg}% contrário`);
   numeros.appendChild(el('strong', `Saldo ${sinal(r.saldo)} p.p.`));
-  numeros.appendChild(document.createTextNode(` (margem ±${String(r.margem).replace('.', ',')}) · `));
+  numeros.appendChild(document.createTextNode(r.amostra_baixa
+    ? ' (poucos textos: sem margem de erro) · '
+    : ` (margem ±${String(r.margem).replace('.', ',')}) · `));
   numeros.appendChild(document.createTextNode(
     `${r.pos.toFixed(0)}% favorável, ${r.neu.toFixed(0)}% neutro, ${r.neg.toFixed(0)}% contrário · n = ${r.n}`));
   if (r.fora) numeros.appendChild(document.createTextNode(` · ${r.fora} fora do tema`));
@@ -156,6 +158,7 @@ function serieSaldo(ev, publico, corLinha) {
     pointRadius: 5,
     spanGaps: true,
     margens: ev.semanas.map((s) => (s[publico] ? s[publico].margem : null)),
+    baixas: ev.semanas.map((s) => !s[publico] || s[publico].amostra_baixa),
     ns: ev.semanas.map((s) => (s[publico] ? s[publico].n : 0)),
   };
 }
@@ -174,8 +177,8 @@ function desenharSaldo(ev) {
         tooltip: {
           callbacks: {
             label: (c) => {
-              const m = c.dataset.margens[c.dataIndex];
-              return `${c.dataset.label}: ${sinal(c.parsed.y)} p.p. (±${m}) · n = ${c.dataset.ns[c.dataIndex]}`;
+              const m = c.dataset.baixas[c.dataIndex] ? 'amostra baixa' : `±${c.dataset.margens[c.dataIndex]}`;
+              return `${c.dataset.label}: ${sinal(c.parsed.y)} p.p. (${m}) · n = ${c.dataset.ns[c.dataIndex]}`;
             },
           },
         },
