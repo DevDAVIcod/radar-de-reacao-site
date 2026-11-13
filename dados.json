@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-13T17:20:48+00:00",
+ "atualizado_em": "2026-11-13T17:25:41+00:00",
  "minimo_semana": 30,
  "teto_video": 0.1,
  "classificacao_pronta": true,
@@ -402,7 +402,7 @@
      {
       "data": "2026-11-13",
       "dolar": 9.12,
-      "ibovespa": -6.32
+      "ibovespa": -6.31
      }
     ]
    }
@@ -866,15 +866,15 @@
      {
       "data": "2026-11-13",
       "dolar": 9.69,
-      "ibovespa": -7.12
+      "ibovespa": -7.11
      }
     ]
    }
   }
  ],
  "qualidade": {
-  "provisorio": true,
-  "atualizado_em": "2026-11-12",
+  "provisorio": false,
+  "atualizado_em": "2026-11-13",
   "metodo": "LLM aberto Qwen2.5-7B-Instruct (comprimido em 4 bits), com o guia de rotulagem como instrução: prompt v2 nos comentários e v1 nas notícias.",
   "comparacao": "Comparado com LeIA (léxico), BERT de redes sociais e FinBERT-PT-BR em 300 textos rotulados à mão (base) e testado em 100 textos novos, sorteados depois (validação).",
   "validacao": [
@@ -887,17 +887,17 @@
    {
     "recorte": "Mercado",
     "n": 48,
-    "macro_f1": 0.41,
-    "ic": "0,30 a 0,50"
+    "macro_f1": 0.42,
+    "ic": "0,31 a 0,51"
    },
    {
     "recorte": "Total",
     "n": 63,
-    "macro_f1": 0.52,
-    "ic": "0,40 a 0,64"
+    "macro_f1": 0.55,
+    "ic": "0,43 a 0,68"
    }
   ],
-  "nota_validacao": "Números do prompt v2 em 12/11/2026. Serão trocados pelos do método final (v2 nos comentários e v1 nas notícias) depois da rodada lado a lado.",
+  "nota_validacao": "Notas do método final (v2 nos comentários e v1 nas notícias), rodada de 13/11/2026. Na base, o LLM ganhou de todos os outros métodos. Na validação, ganhou do LeIA e empatou com os dois BERT. No Mercado, o FinBERT-PT-BR teve nota maior na validação (0,55), mas a diferença está dentro da margem e, na base, o LLM ganhou dele. Na validação do Público, só 15 dos 50 comentários tinham posição sobre a decisão, por isso o intervalo é largo.",
   "concordancia": [
    {
     "base": "Público (150 comentários)",
@@ -909,12 +909,12 @@
    }
   ],
   "nota_concordancia": "Os 300 textos da base foram rotulados por uma pessoa da liga. A concordância (κ) foi medida contra uma segunda rotulagem às cegas, feita por um assistente de IA antes de ver os rótulos humanos, e não por um segundo analista humano. Nas divergências, valeu o rótulo humano, revisado pelas regras do guia.",
-  "filtro_fora": "O modelo reconhece cerca de 1 em cada 3 comentários fora do tema (cobertura de 0,31 na validação). Quando marca um texto como fora do tema, acerta. Por isso, parte dos comentários contados no Público é, na verdade, fora do tema.",
+  "filtro_fora": "O Público conta comentários que falam de outro assunto. Na validação, a pessoa que rotulou achou posição sobre a decisão em 15 dos 50 comentários sorteados, e o modelo contou 39: 24 deles eram, para a pessoa, fora do tema (por exemplo, ataques ou elogios ao governo sem citar a decisão). Quando o modelo marca um comentário como fora do tema, quase sempre acerta. Separar melhor o que é fora do tema é a primeira melhoria prevista.",
   "limitacoes": [
    "Reação online não é a opinião da população: os números vêm de comentários do YouTube e de notícias de quatro portais (InfoMoney, Money Times, Seu Dinheiro e Exame).",
    "No Público, o modelo lê até 400 comentários sorteados por semana, entre todos os coletados, e nenhum vídeo pesa mais de 10% de uma semana (a margem de erro já considera esse ajuste).",
    "No Mercado, quase todas as notícias saem na primeira semana; semanas com menos de 30 textos aparecem esmaecidas e sem margem de erro.",
-   "No Mercado, o modelo marca como contrárias mais notícias do que a pessoa que rotulou: na base de 150 notícias, foram 59 contra 32, e a maior parte da diferença eram notícias que, para a pessoa, só informavam (neutras). Por isso, o saldo do Mercado tende a sair mais negativo do que sairia com rotulagem humana.",
+   "No Mercado, o modelo marca como contrárias mais notícias do que a pessoa que rotulou: 59 contra 32 nas 150 notícias da base e 24 contra 13 nas 50 da validação, quase sempre notícias que, para a pessoa, só informavam (neutras). Nas duas amostras, o saldo do modelo saiu cerca de 10 pontos mais negativo que o da pessoa.",
    "A base do Mercado tem poucos textos positivos (18 de 150), então a nota da classe positiva é instável.",
    "Na base do Público, 42 dos 75 comentários do Bolsa Família vieram de um único canal; as notas foram conferidas com e sem esse canal.",
    "Nomes de políticos e partidos são trocados por marcadores antes da classificação, e o site publica só números agregados."

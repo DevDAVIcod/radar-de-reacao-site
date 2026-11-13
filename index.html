@@ -3,101 +3,128 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radar de Reação</title>
-  <meta name="description" content="Termômetro semanal de como o mercado e o público online reagem a decisões econômicas do governo.">
+  <title>Radar de Reação · Ceará Finance</title>
+  <meta name="description" content="Termômetro semanal de como o mercado e o público online reagem a decisões econômicas do governo. Um projeto da Ceará Finance.">
+  <link rel="icon" href="https://cearafinance.com.br/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="estilo.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
-  <header class="topo">
-    <div class="limite">
-      <h1>Radar de Reação</h1>
-      <p class="sub">Como o <strong>mercado</strong> (notícias de economia) e o <strong>público online</strong> (comentários no YouTube) reagem a decisões do governo com impacto econômico. O Radar mostra só a reação: não opina sobre as decisões.</p>
-      <p class="atualizado" id="atualizado"></p>
+  <header class="barra-cf">
+    <div class="limite barra-cf-linha">
+      <a class="marca" href="https://cearafinance.com.br/pt" target="_blank" rel="noopener">
+        <img src="https://cearafinance.com.br/images/ceara-finance-logo-dark.png" alt="Ceará Finance" height="40"
+             onerror="this.hidden = true; this.nextElementSibling.hidden = false;">
+        <span class="marca-texto" hidden>CEARÁ FINANCE</span>
+      </a>
+      <span class="barra-cf-produto">Radar de Reação</span>
     </div>
   </header>
 
   <main class="limite">
-    <p class="atualizado-incorporado" id="atualizado-incorporado"></p>
-    <nav class="eventos" id="eventos" aria-label="Eventos"></nav>
+    <section class="abertura">
+      <h1>Radar de Reação</h1>
+      <p class="sub">Como o <strong>mercado</strong> (notícias de economia) e o <strong>público online</strong> (comentários no YouTube) reagem a decisões do governo com impacto econômico, semana a semana. O Radar mede a reação; ele não opina sobre as decisões.</p>
+      <p class="assinatura">Ceará Finance · <span id="atualizado"></span></p>
+    </section>
+
+    <nav class="eventos" id="eventos" aria-label="Escolha a decisão"></nav>
 
     <section class="cartao" id="cartao-evento" aria-live="polite">
-      <p class="rotulo-secao">Evento</p>
+      <p class="rotulo-secao">Decisão analisada</p>
       <h2 id="evento-titulo"></h2>
       <p id="evento-detalhe" class="detalhe"></p>
     </section>
 
     <section class="cartao" id="aviso-classificacao" hidden>
-      <p><strong>Classificação em andamento.</strong> Por enquanto, o painel mostra só os preços. As barras de reação aparecem quando a classificação dos textos terminar.</p>
+      <p><strong>Classificação em andamento.</strong> Por enquanto, o painel mostra só os preços. Os gráficos de reação aparecem quando a classificação dos textos terminar.</p>
     </section>
 
-    <section class="cartao" id="secao-semana">
-      <div class="linha-semana">
-        <label for="semana" class="rotulo-secao">Semana desde o anúncio</label>
-        <span id="semana-texto" class="semana-texto"></span>
-      </div>
-      <input type="range" id="semana" min="1" max="1" value="1" step="1">
-      <div class="publicos">
-        <article class="publico" id="bloco-mercado">
-          <h3>Mercado <span class="tipo">notícias de economia</span></h3>
-          <div class="barra" role="img" aria-label=""></div>
-          <p class="numeros"></p>
-        </article>
-        <article class="publico" id="bloco-publico">
-          <h3>Público <span class="tipo">reação online no YouTube</span></h3>
-          <div class="barra" role="img" aria-label=""></div>
-          <p class="numeros"></p>
-        </article>
-      </div>
-      <ul class="legenda">
+    <section class="cartao como-ler">
+      <h2>Como ler o Radar</h2>
+      <ul>
+        <li><strong>Mercado:</strong> notícias que citam a decisão em quatro portais de economia (InfoMoney, Money Times, Seu Dinheiro e Exame), pelo título e pelo resumo.</li>
+        <li><strong>Público:</strong> comentários em vídeos do YouTube sobre a decisão. A cada semana, até 400 comentários são sorteados, e nenhum vídeo pesa mais de 10% da semana.</li>
+        <li><strong>Classificação:</strong> um modelo de IA aberto lê cada texto e marca se ele é <span class="marca-pos">favorável</span>, <span class="marca-neu">neutro</span> ou <span class="marca-neg">contrário</span> à decisão. Textos sobre outro assunto ficam fora da conta.</li>
+        <li><strong>Semanas:</strong> contadas a partir do dia do anúncio. A semana 1 são os sete primeiros dias.</li>
+      </ul>
+    </section>
+
+    <section class="cartao" id="secao-reacao">
+      <h2>Reação semana a semana</h2>
+      <p class="detalhe">Cada barra é uma semana e soma 100% dos textos com posição. Embaixo de cada barra vêm a semana e o número de textos que entraram na conta (<strong>n</strong>). Barras claras, com asterisco (*), têm menos de 30 textos: são instáveis, leia com cuidado. Passe o mouse ou toque numa barra para ver os números.</p>
+      <ul class="legenda" aria-label="Legenda">
         <li><span class="cor pos"></span>Favorável à decisão</li>
         <li><span class="cor neu"></span>Neutro</li>
         <li><span class="cor neg"></span>Contrário à decisão</li>
       </ul>
+      <div class="duplo">
+        <figure class="figura">
+          <figcaption><strong>Mercado</strong> · notícias de economia</figcaption>
+          <div class="grafico"><canvas id="barras-mercado" role="img" aria-label="Reação do mercado por semana"></canvas></div>
+        </figure>
+        <figure class="figura">
+          <figcaption><strong>Público</strong> · comentários no YouTube</figcaption>
+          <div class="grafico"><canvas id="barras-publico" role="img" aria-label="Reação do público por semana"></canvas></div>
+        </figure>
+      </div>
+      <details class="tabelas">
+        <summary>Ver os números de cada semana em tabela</summary>
+        <div id="tabelas-semanas"></div>
+      </details>
     </section>
 
-    <section class="cartao">
-      <p class="rotulo-secao">Saldo semana a semana</p>
-      <p class="detalhe">Saldo = % favorável − % contrário. Semanas com menos de 30 textos aparecem como ponto vazado (amostra baixa).</p>
-      <div class="grafico"><canvas id="grafico-saldo" aria-label="Saldo por semana"></canvas></div>
+    <section class="cartao" id="secao-saldo">
+      <h2>Saldo: mais a favor ou mais contra?</h2>
+      <p class="detalhe">O saldo resume cada barra num número: <strong>% favorável − % contrário</strong>, em pontos percentuais (p.p.). Acima de zero, há mais textos a favor; abaixo, mais contra; +100 seria todos a favor e −100, todos contra. Pontos vazados e linhas tracejadas marcam semanas com menos de 30 textos.</p>
+      <div class="grafico grafico-alto"><canvas id="grafico-saldo" role="img" aria-label="Saldo da reação por semana, mercado e público"></canvas></div>
     </section>
 
-    <section class="cartao">
-      <p class="rotulo-secao">Termômetro de preços</p>
-      <p class="detalhe" id="precos-detalhe">Variação acumulada desde a véspera do anúncio. Os preços não entram no cálculo da reação.</p>
+    <section class="cartao" id="secao-precos">
+      <h2>Preços desde o anúncio</h2>
+      <p class="detalhe" id="precos-detalhe"></p>
       <div class="termometro" id="termometro"></div>
-      <div class="grafico"><canvas id="grafico-precos" aria-label="Variação dos preços desde a véspera"></canvas></div>
+      <div class="grafico grafico-alto"><canvas id="grafico-precos" role="img" aria-label="Variação do dólar e do Ibovespa desde a véspera do anúncio"></canvas></div>
     </section>
 
     <section class="cartao" id="qualidade">
-      <p class="rotulo-secao">Qualidade do modelo</p>
+      <h2>Dá para confiar nos números?</h2>
       <p id="qualidade-metodo"></p>
       <p id="qualidade-comparacao" class="detalhe"></p>
-      <h3>Nota em textos novos (validação)</h3>
-      <table class="tabela" id="tabela-validacao">
-        <thead><tr><th>Recorte</th><th>Textos</th><th>Macro-F1</th><th>Intervalo de 95%</th></tr></thead>
-        <tbody></tbody>
-      </table>
+      <h3>Nota do modelo em textos novos (validação)</h3>
+      <p class="detalhe">Macro-F1 vai de 0 a 1: mede quanto o modelo acerta favorável, neutro e contrário, com o mesmo peso para os três.</p>
+      <div class="rolagem">
+        <table class="tabela" id="tabela-validacao">
+          <thead><tr><th>Recorte</th><th>Textos</th><th>Macro-F1</th><th>Intervalo de 95%</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
       <p class="detalhe" id="nota-validacao"></p>
       <h3>Concordância entre rotulagens</h3>
-      <table class="tabela" id="tabela-concordancia">
-        <thead><tr><th>Base</th><th>κ (kappa)</th></tr></thead>
-        <tbody></tbody>
-      </table>
+      <div class="rolagem">
+        <table class="tabela" id="tabela-concordancia">
+          <thead><tr><th>Base</th><th>κ (kappa)</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
       <p class="detalhe" id="nota-concordancia"></p>
-      <h3>Fora do tema</h3>
+      <h3>Textos fora do tema</h3>
       <p id="filtro-fora"></p>
       <h3>Limitações</h3>
       <ul id="limitacoes"></ul>
     </section>
   </main>
 
-  <footer class="limite rodape">
-    <p>Radar de Reação · projeto da liga de mercado financeiro. Textos coletados sem autor; nomes de políticos e partidos são trocados por marcadores antes da classificação. Reação online ≠ opinião da população.</p>
+  <footer class="rodape">
+    <div class="limite">
+      <p><strong>Radar de Reação</strong> · um projeto da Ceará Finance.</p>
+      <p>Desenvolvido por <strong class="autor">Davi Maciel - Analista CF Tech</strong>.</p>
+      <p>Fontes: InfoMoney, Money Times, Seu Dinheiro e Exame (notícias); YouTube (comentários); Banco Central (dólar PTAX); Yahoo Finance (Ibovespa). Os textos são coletados sem autor, e nomes de políticos e partidos são trocados por marcadores antes da classificação. Reação online não é a opinião da população.</p>
+    </div>
   </footer>
 </body>
 </html>
