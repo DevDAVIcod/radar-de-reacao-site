@@ -1,15 +1,233 @@
 {
- "atualizado_em": "2026-11-12T17:02:27+00:00",
+ "atualizado_em": "2026-11-13T14:46:08+00:00",
  "minimo_semana": 30,
  "teto_video": 0.1,
- "classificacao_pronta": false,
+ "classificacao_pronta": true,
  "eventos": [
   {
    "id": "bets-2026",
    "titulo": "Governo publica MP que proíbe as bets no Brasil",
    "data": "2026-09-25",
    "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/entenda-medida-provisoria-e-projeto-que-proibem-bets-no-brasil",
-   "semanas": [],
+   "semanas": [
+    {
+     "semana": 1,
+     "inicio": "2026-09-25",
+     "fim": "2026-10-01",
+     "publico": {
+      "textos": 400,
+      "fora": 71,
+      "n": 329,
+      "pos": 33.3,
+      "neg": 63.4,
+      "neu": 3.4,
+      "saldo": -30.1,
+      "margem": 10.1,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 85,
+      "fora": 2,
+      "n": 83,
+      "pos": 19.3,
+      "neg": 51.8,
+      "neu": 28.9,
+      "saldo": -32.5,
+      "margem": 16.7,
+      "amostra_baixa": false
+     },
+     "precos": {
+      "dolar": 0.55,
+      "ibovespa": 1.76
+     }
+    },
+    {
+     "semana": 2,
+     "inicio": "2026-10-02",
+     "fim": "2026-10-08",
+     "publico": {
+      "textos": 400,
+      "fora": 101,
+      "n": 299,
+      "pos": 28.3,
+      "neg": 66.9,
+      "neu": 4.8,
+      "saldo": -38.5,
+      "margem": 10.3,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 18,
+      "fora": 0,
+      "n": 18,
+      "pos": 0.0,
+      "neg": 38.9,
+      "neu": 61.1,
+      "saldo": -38.9,
+      "margem": 22.5,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": -3.24,
+      "ibovespa": 12.1
+     }
+    },
+    {
+     "semana": 3,
+     "inicio": "2026-10-09",
+     "fim": "2026-10-15",
+     "publico": {
+      "textos": 400,
+      "fora": 85,
+      "n": 315,
+      "pos": 33.8,
+      "neg": 61.1,
+      "neu": 5.1,
+      "saldo": -27.3,
+      "margem": 11.2,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 9,
+      "fora": 0,
+      "n": 9,
+      "pos": 33.3,
+      "neg": 55.6,
+      "neu": 11.1,
+      "saldo": -22.2,
+      "margem": 59.9,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": -2.46,
+      "ibovespa": 11.07
+     }
+    },
+    {
+     "semana": 4,
+     "inicio": "2026-10-16",
+     "fim": "2026-10-22",
+     "publico": {
+      "textos": 173,
+      "fora": 42,
+      "n": 131,
+      "pos": 31.1,
+      "neg": 64.2,
+      "neu": 4.7,
+      "saldo": -33.1,
+      "margem": 16.3,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 2,
+      "fora": 0,
+      "n": 2,
+      "pos": 50.0,
+      "neg": 50.0,
+      "neu": 0.0,
+      "saldo": 0.0,
+      "margem": 138.6,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": -2.73,
+      "ibovespa": 10.96
+     }
+    },
+    {
+     "semana": 5,
+     "inicio": "2026-10-23",
+     "fim": "2026-10-29",
+     "publico": {
+      "textos": 400,
+      "fora": 146,
+      "n": 254,
+      "pos": 35.0,
+      "neg": 60.1,
+      "neu": 4.8,
+      "saldo": -25.1,
+      "margem": 15.6,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 6,
+      "fora": 0,
+      "n": 6,
+      "pos": 33.3,
+      "neg": 33.3,
+      "neu": 33.3,
+      "saldo": 0.0,
+      "margem": 65.3,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": 3.76,
+      "ibovespa": -8.03
+     }
+    },
+    {
+     "semana": 6,
+     "inicio": "2026-10-30",
+     "fim": "2026-11-05",
+     "publico": {
+      "textos": 400,
+      "fora": 66,
+      "n": 334,
+      "pos": 38.8,
+      "neg": 57.7,
+      "neu": 3.6,
+      "saldo": -18.9,
+      "margem": 10.4,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 5,
+      "fora": 0,
+      "n": 5,
+      "pos": 20.0,
+      "neg": 20.0,
+      "neu": 60.0,
+      "saldo": 0.0,
+      "margem": 55.4,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": 5.46,
+      "ibovespa": -9.66
+     }
+    },
+    {
+     "semana": 7,
+     "inicio": "2026-11-06",
+     "fim": "2026-11-12",
+     "publico": {
+      "textos": 400,
+      "fora": 167,
+      "n": 233,
+      "pos": 26.4,
+      "neg": 67.0,
+      "neu": 6.5,
+      "saldo": -40.6,
+      "margem": 12.2,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 1,
+      "fora": 0,
+      "n": 1,
+      "pos": 0.0,
+      "neg": 0.0,
+      "neu": 100.0,
+      "saldo": 0.0,
+      "margem": 0.0,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": 8.39,
+      "ibovespa": -6.87
+     }
+    }
+   ],
    "encerrado_na_semana": null,
    "precos": {
     "vespera": "2026-09-24",
@@ -179,7 +397,12 @@
      {
       "data": "2026-11-12",
       "dolar": 8.39,
-      "ibovespa": -6.83
+      "ibovespa": -6.87
+     },
+     {
+      "data": "2026-11-13",
+      "dolar": null,
+      "ibovespa": -6.58
      }
     ]
    }
@@ -189,7 +412,256 @@
    "titulo": "Decreto reajusta o Bolsa Família em 15%",
    "data": "2026-09-17",
    "fonte_url": "https://meutudo.com.br/blog/noticias/2026/09/18/aumento-do-bolsa-familia-2026-chega-a-r-164-por-integrante-quanto-cada-familia-recebera",
-   "semanas": [],
+   "semanas": [
+    {
+     "semana": 1,
+     "inicio": "2026-09-17",
+     "fim": "2026-09-23",
+     "publico": {
+      "textos": 400,
+      "fora": 87,
+      "n": 313,
+      "pos": 21.2,
+      "neg": 70.4,
+      "neu": 8.3,
+      "saldo": -49.2,
+      "margem": 9.4,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 72,
+      "fora": 2,
+      "n": 70,
+      "pos": 15.7,
+      "neg": 40.0,
+      "neu": 44.3,
+      "saldo": -24.3,
+      "margem": 16.5,
+      "amostra_baixa": false
+     },
+     "precos": {
+      "dolar": -0.22,
+      "ibovespa": 0.14
+     }
+    },
+    {
+     "semana": 2,
+     "inicio": "2026-09-24",
+     "fim": "2026-09-30",
+     "publico": {
+      "textos": 320,
+      "fora": 70,
+      "n": 250,
+      "pos": 31.0,
+      "neg": 49.9,
+      "neu": 19.1,
+      "saldo": -18.9,
+      "margem": 12.0,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 6,
+      "fora": 0,
+      "n": 6,
+      "pos": 16.7,
+      "neg": 16.7,
+      "neu": 66.7,
+      "saldo": 0.0,
+      "margem": 46.2,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": 0.55,
+      "ibovespa": 0.43
+     }
+    },
+    {
+     "semana": 3,
+     "inicio": "2026-10-01",
+     "fim": "2026-10-07",
+     "publico": {
+      "textos": 78,
+      "fora": 20,
+      "n": 58,
+      "pos": 17.2,
+      "neg": 59.2,
+      "neu": 23.6,
+      "saldo": -42.0,
+      "margem": 24.5,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 6,
+      "fora": 0,
+      "n": 6,
+      "pos": 16.7,
+      "neg": 16.7,
+      "neu": 66.7,
+      "saldo": 0.0,
+      "margem": 46.2,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": -3.09,
+      "ibovespa": 10.11
+     }
+    },
+    {
+     "semana": 4,
+     "inicio": "2026-10-08",
+     "fim": "2026-10-14",
+     "publico": {
+      "textos": 166,
+      "fora": 44,
+      "n": 122,
+      "pos": 38.9,
+      "neg": 43.1,
+      "neu": 17.9,
+      "saldo": -4.2,
+      "margem": 26.1,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 2,
+      "fora": 1,
+      "n": 1,
+      "pos": 0.0,
+      "neg": 100.0,
+      "neu": 0.0,
+      "saldo": -100.0,
+      "margem": 0.0,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": -2.11,
+      "ibovespa": 11.3
+     }
+    },
+    {
+     "semana": 5,
+     "inicio": "2026-10-15",
+     "fim": "2026-10-21",
+     "publico": {
+      "textos": 400,
+      "fora": 113,
+      "n": 287,
+      "pos": 15.2,
+      "neg": 75.4,
+      "neu": 9.4,
+      "saldo": -60.2,
+      "margem": 13.8,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 13,
+      "fora": 0,
+      "n": 13,
+      "pos": 23.1,
+      "neg": 15.4,
+      "neu": 61.5,
+      "saldo": 7.7,
+      "margem": 33.5,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": -2.43,
+      "ibovespa": 11.29
+     }
+    },
+    {
+     "semana": 6,
+     "inicio": "2026-10-22",
+     "fim": "2026-10-28",
+     "publico": {
+      "textos": 18,
+      "fora": 4,
+      "n": 14,
+      "pos": 10.9,
+      "neg": 75.0,
+      "neu": 14.1,
+      "saldo": -64.1,
+      "margem": 37.3,
+      "amostra_baixa": true
+     },
+     "mercado": {
+      "textos": 1,
+      "fora": 0,
+      "n": 1,
+      "pos": 0.0,
+      "neg": 0.0,
+      "neu": 100.0,
+      "saldo": 0.0,
+      "margem": 0.0,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": 3.67,
+      "ibovespa": -7.84
+     }
+    },
+    {
+     "semana": 7,
+     "inicio": "2026-10-29",
+     "fim": "2026-11-04",
+     "publico": {
+      "textos": 400,
+      "fora": 73,
+      "n": 327,
+      "pos": 17.1,
+      "neg": 79.4,
+      "neu": 3.5,
+      "saldo": -62.3,
+      "margem": 10.8,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 1,
+      "fora": 0,
+      "n": 1,
+      "pos": 0.0,
+      "neg": 100.0,
+      "neu": 0.0,
+      "saldo": -100.0,
+      "margem": 0.0,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": 6.31,
+      "ibovespa": -9.69
+     }
+    },
+    {
+     "semana": 8,
+     "inicio": "2026-11-05",
+     "fim": "2026-11-11",
+     "publico": {
+      "textos": 45,
+      "fora": 8,
+      "n": 37,
+      "pos": 18.0,
+      "neg": 62.9,
+      "neu": 19.1,
+      "saldo": -44.9,
+      "margem": 28.9,
+      "amostra_baixa": false
+     },
+     "mercado": {
+      "textos": 0,
+      "fora": 0,
+      "n": 0,
+      "pos": null,
+      "neg": null,
+      "neu": null,
+      "saldo": null,
+      "margem": null,
+      "amostra_baixa": true
+     },
+     "precos": {
+      "dolar": 7.92,
+      "ibovespa": -7.27
+     }
+    }
+   ],
    "encerrado_na_semana": null,
    "precos": {
     "vespera": "2026-09-16",
@@ -389,7 +861,12 @@
      {
       "data": "2026-11-12",
       "dolar": 8.96,
-      "ibovespa": -7.63
+      "ibovespa": -7.67
+     },
+     {
+      "data": "2026-11-13",
+      "dolar": null,
+      "ibovespa": -7.37
      }
     ]
    }
